@@ -1,8 +1,12 @@
 {
-  "name": "backend-project-lvl1",
+  "name": "backend-project-lvl1-omg-this-dude",
   "version": "1.0.0",
   "description": "brain games project",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
