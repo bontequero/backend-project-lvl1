@@ -3,8 +3,9 @@ name: run checks
 on: [push]
 
 jobs:
+  ci:
     name: run all checks
     runs-on: ubuntu-latest
     steps:
-        - name: eslint
-          run: make lint
+    - name: eslint
+      run: make lint
