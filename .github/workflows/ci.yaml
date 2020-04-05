@@ -1,0 +1,10 @@
+name: run checks
+
+on: [push]
+
+jobs:
+    name: run all checks
+    runs-on: ubuntu-latest
+    steps:
+        - name: eslint
+          run: make lint
