@@ -6,6 +6,11 @@ jobs:
   ci:
     name: run all checks
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [13.11]
+
     steps:
-    - name: eslint
-      run: make lint
+    - run: npm ci
+    - run: make lint
