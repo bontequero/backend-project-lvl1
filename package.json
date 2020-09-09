@@ -1,11 +1,11 @@
 {
   "name": "backend-project-lvl1-omg-this-dude",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "brain games project",
   "main": "src/index.js",
   "type": "module",
   "bin": {
-    "brain-games": "src/index.js",
+    "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js"
   },
