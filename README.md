@@ -11,3 +11,7 @@
 ## brain-calc usage
 
 [![asciicast](https://asciinema.org/a/z5FZc5Du91uM5TKjPbhsFyBQC.svg)](https://asciinema.org/a/z5FZc5Du91uM5TKjPbhsFyBQC)
+
+## brain-gcd usage
+
+[![asciicast](https://asciinema.org/a/VatdjRQ0uZTLDDBnqcFeaEuMU.svg)](https://asciinema.org/a/VatdjRQ0uZTLDDBnqcFeaEuMU)
