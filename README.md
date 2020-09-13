@@ -15,3 +15,7 @@
 ## brain-gcd usage
 
 [![asciicast](https://asciinema.org/a/VatdjRQ0uZTLDDBnqcFeaEuMU.svg)](https://asciinema.org/a/VatdjRQ0uZTLDDBnqcFeaEuMU)
+
+## brain-progression
+
+[![asciicast](https://asciinema.org/a/Pu0SFVcF662UPvHM57MSYusfB.svg)](https://asciinema.org/a/Pu0SFVcF662UPvHM57MSYusfB)
