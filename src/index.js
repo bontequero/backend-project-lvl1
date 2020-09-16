@@ -2,13 +2,7 @@ import readlineSync from 'readline-sync';
 
 const maxCorrectAnswers = 3;
 
-export const getRandomInt = (minp, maxp) => {
-  const min = Math.ceil(minp);
-  const max = Math.floor(maxp);
-  return Math.floor(Math.random() * (max - min) + min);
-};
-
-export const runGame = (game) => {
+export default (game) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
