@@ -22,7 +22,7 @@ export default () => {
       const answer = isPrime(number) ? 'yes' : 'no';
 
       return {
-        string: printed,
+        question: printed,
         answer,
       };
     },

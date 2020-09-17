@@ -31,7 +31,7 @@ export default () => {
       const printed = elems.join(' ');
 
       return {
-        string: printed,
+        question: printed,
         answer: `${answer}`,
       };
     },

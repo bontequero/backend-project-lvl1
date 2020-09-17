@@ -24,7 +24,7 @@ export default () => {
       const answer = gcd(a, b);
 
       return {
-        string: printed,
+        question: printed,
         answer: `${answer}`,
       };
     },

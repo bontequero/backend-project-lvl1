@@ -12,7 +12,7 @@ export default () => {
       const number = getRandomInt(minNumber, maxNumber);
       const answer = isEven(number) ? 'yes' : 'no';
       return {
-        string: number,
+        question: number,
         answer,
       };
     },

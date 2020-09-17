@@ -26,7 +26,7 @@ export default () => {
       const answer = computeFn(a, b);
 
       return {
-        string: printed,
+        question: printed,
         answer: `${answer}`,
       };
     },
