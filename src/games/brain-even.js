@@ -10,9 +10,10 @@ export default () => {
     task: 'Answer "yes" if the number is even, otherwise answer "no".',
     genQuestionAndAnswer: () => {
       const number = getRandomInt(minNumber, maxNumber);
+      const question = number.toString()
       const answer = isEven(number) ? 'yes' : 'no';
       return {
-        question: number,
+        question,
         answer,
       };
     },

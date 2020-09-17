@@ -17,22 +17,23 @@ export default () => {
       const position = getRandomInt(minNumber, numElems);
 
       const elems = [];
-      let answer;
+      let missingNum;
       for (let i = 0; i < numElems; i += 1) {
         const el = start + i * diff;
         if (i === position) {
           elems.push('..');
-          answer = el;
+          missingNum = el;
         } else {
           elems.push(`${el}`);
         }
       }
 
-      const printed = elems.join(' ');
+      const question = elems.join(' ');
+      const answer = missingNum.toString();
 
       return {
-        question: printed,
-        answer: `${answer}`,
+        question,
+        answer,
       };
     },
   }

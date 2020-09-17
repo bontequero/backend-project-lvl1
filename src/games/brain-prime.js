@@ -21,11 +21,11 @@ export default () => {
     genQuestionAndAnswer: () => {
       const number = getRandomInt(minNumber, maxNumber);
 
-      const printed = `${number}`;
+      const question = number.toString();
       const answer = isPrime(number) ? 'yes' : 'no';
 
       return {
-        question: printed,
+        question,
         answer,
       };
     },

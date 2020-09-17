@@ -19,13 +19,13 @@ export default () => {
     genQuestionAndAnswer: () => {
       const a = getRandomInt(minNumber, maxNumber);
       const b = getRandomInt(minNumber, maxNumber);
-      const printed = `${a} ${b}`;
 
+      const question = `${a} ${b}`;
       const answer = gcd(a, b);
 
       return {
-        question: printed,
-        answer: `${answer}`,
+        question,
+        answer: answer.toString(),
       };
     },
   }
