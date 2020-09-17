@@ -12,7 +12,7 @@ export default (game) => {
   console.log(game.task);
 
   for (let i = 1; i <= maxCorrectAnswers; i += 1) {
-    const question = game.question();
+    const question = game.genQuestionAndAnswer();
     const questionPrint = `Question: ${question.string}`;
     console.log(questionPrint);
 

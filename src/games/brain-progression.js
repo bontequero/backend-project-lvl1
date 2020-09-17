@@ -11,7 +11,7 @@ const numElems = 10;
 export default () => {
   return {
     task: 'What number is missing in the progression?',
-    question: () => {
+    genQuestionAndAnswer: () => {
       const start = getRandomInt(minNumber, maxNumber);
       const diff = getRandomInt(minDiff, maxDiff);
       const position = getRandomInt(minNumber, numElems);

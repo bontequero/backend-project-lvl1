@@ -15,7 +15,7 @@ const isPrime = (num) => {
 export default () => {
   return {
     task: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    question: () => {
+    genQuestionAndAnswer: () => {
       const number = getRandomInt(minNumber, maxNumber);
 
       const printed = `${number}`;
