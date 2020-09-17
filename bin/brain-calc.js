@@ -3,4 +3,5 @@
 import runGame from '../src/index.js';
 import calc from '../src/games/brain-calc.js';
 
-runGame(calc);
+const game = calc();
+runGame(game);

@@ -12,17 +12,19 @@ const isPrime = (num) => {
   return true;
 };
 
-export default {
-  rules: () => 'Answer "yes" if given number is prime. Otherwise answer "no".',
-  question: () => {
-    const number = getRandomInt(minNumber, maxNumber);
+export default () => {
+  return {
+    rules: () => 'Answer "yes" if given number is prime. Otherwise answer "no".',
+    question: () => {
+      const number = getRandomInt(minNumber, maxNumber);
 
-    const printed = `${number}`;
-    const answer = isPrime(number) ? 'yes' : 'no';
+      const printed = `${number}`;
+      const answer = isPrime(number) ? 'yes' : 'no';
 
-    return {
-      string: printed,
-      answer,
-    };
-  },
+      return {
+        string: printed,
+        answer,
+      };
+    },
+  }
 };

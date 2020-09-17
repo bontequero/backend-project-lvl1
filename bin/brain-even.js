@@ -3,4 +3,5 @@
 import runGame from '../src/index.js';
 import braineven from '../src/games/brain-even.js';
 
-runGame(braineven);
+const game = braineven();
+runGame(game);
