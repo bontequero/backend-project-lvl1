@@ -4,13 +4,11 @@ const minNumber = 0;
 const maxNumber = 100;
 
 const gcd = (a, b) => {
-  if (a === b) {
+  if (b === 0) {
     return a;
   }
-  if (a > b) {
-    return gcd(a - b, b);
-  }
-  return gcd(a, b - a);
+
+  return gcd(b, a % b);
 };
 
 export default () => ({
