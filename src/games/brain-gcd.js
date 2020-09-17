@@ -15,7 +15,7 @@ const gcd = (a, b) => {
 
 export default () => {
   return {
-    rules: () => 'Find the greatest common divisor of given numbers.',
+    task: 'Find the greatest common divisor of given numbers.',
     question: () => {
       const a = getRandomInt(minNumber, maxNumber);
       const b = getRandomInt(minNumber, maxNumber);

@@ -10,7 +10,7 @@ const numElems = 10;
 
 export default () => {
   return {
-    rules: () => 'What number is missing in the progression?',
+    task: 'What number is missing in the progression?',
     question: () => {
       const start = getRandomInt(minNumber, maxNumber);
       const diff = getRandomInt(minDiff, maxDiff);

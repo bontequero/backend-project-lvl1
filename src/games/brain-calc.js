@@ -12,7 +12,7 @@ const computeMap = {
 
 export default () => {
   return {
-    rules: () => 'What is the result of the expression?',
+    task: 'What is the result of the expression?',
     question: () => {
       const a = getRandomInt(minNumber, maxNumber);
       const b = getRandomInt(minNumber, maxNumber);

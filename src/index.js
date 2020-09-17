@@ -9,8 +9,7 @@ export default (game) => {
   const welcomeMessage = `Hello, ${name}!`;
   console.log(welcomeMessage);
 
-  const rules = game.rules();
-  console.log(rules);
+  console.log(game.task);
 
   for (let i = 1; i <= maxCorrectAnswers; i += 1) {
     const question = game.question();
