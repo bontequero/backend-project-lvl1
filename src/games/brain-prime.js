@@ -15,19 +15,17 @@ const isPrime = (num) => {
   return true;
 };
 
-export default () => {
-  return {
-    task: 'Answer "yes" if given number is prime. Otherwise answer "no".',
-    genQuestionAndAnswer: () => {
-      const number = getRandomInt(minNumber, maxNumber);
+export default () => ({
+  task: 'Answer "yes" if given number is prime. Otherwise answer "no".',
+  genQuestionAndAnswer: () => {
+    const number = getRandomInt(minNumber, maxNumber);
 
-      const question = number.toString();
-      const answer = isPrime(number) ? 'yes' : 'no';
+    const question = number.toString();
+    const answer = isPrime(number) ? 'yes' : 'no';
 
-      return {
-        question,
-        answer,
-      };
-    },
-  }
-};
+    return {
+      question,
+      answer,
+    };
+  },
+});

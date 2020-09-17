@@ -13,20 +13,18 @@ const gcd = (a, b) => {
   return gcd(a, b - a);
 };
 
-export default () => {
-  return {
-    task: 'Find the greatest common divisor of given numbers.',
-    genQuestionAndAnswer: () => {
-      const a = getRandomInt(minNumber, maxNumber);
-      const b = getRandomInt(minNumber, maxNumber);
+export default () => ({
+  task: 'Find the greatest common divisor of given numbers.',
+  genQuestionAndAnswer: () => {
+    const a = getRandomInt(minNumber, maxNumber);
+    const b = getRandomInt(minNumber, maxNumber);
 
-      const question = `${a} ${b}`;
-      const answer = gcd(a, b);
+    const question = `${a} ${b}`;
+    const answer = gcd(a, b);
 
-      return {
-        question,
-        answer: answer.toString(),
-      };
-    },
-  }
-};
+    return {
+      question,
+      answer: answer.toString(),
+    };
+  },
+});

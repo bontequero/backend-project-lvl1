@@ -16,23 +16,21 @@ const getRandOp = () => {
   return op;
 };
 
-export default () => {
-  return {
-    task: 'What is the result of the expression?',
-    genQuestionAndAnswer: () => {
-      const a = getRandomInt(minNumber, maxNumber);
-      const b = getRandomInt(minNumber, maxNumber);
-      const op = getRandOp();
+export default () => ({
+  task: 'What is the result of the expression?',
+  genQuestionAndAnswer: () => {
+    const a = getRandomInt(minNumber, maxNumber);
+    const b = getRandomInt(minNumber, maxNumber);
+    const op = getRandOp();
 
-      const question = `${a} ${op} ${b}`;
+    const question = `${a} ${op} ${b}`;
 
-      const computeFn = computeMap[op];
-      const answer = computeFn(a, b);
+    const computeFn = computeMap[op];
+    const answer = computeFn(a, b);
 
-      return {
-        question,
-        answer: answer.toString(),
-      };
-    },
-  }
-};
+    return {
+      question,
+      answer: answer.toString(),
+    };
+  },
+});
